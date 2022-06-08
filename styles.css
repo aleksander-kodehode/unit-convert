@@ -1,0 +1,68 @@
+/* GLOBAL OVERRIDE FOR MARIGNS */
+*   {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+Variables
+Background color - main : #232946
+Heading color - main    : #fffffe
+paragraph color - main  : #b8c1ec
+button color - main     : #eebbc3
+button text             : #232946
+*/
+
+/* Setting variables */
+:root {
+    --main-bg-color: #232946;
+    --main-heading-color:  #fffffe;
+    --main-paragraph-color: #b8c1ec;
+    --main-button-color: #eebbc3:
+    --main-button-text-color: #232946;
+}
+
+body {
+    background: var(--main-bg-color);
+    color: var(--main-paragraph-color);
+}
+h1, h2, h3, h4, h5 {
+    color: var(--main-heading-color);
+}
+/* Custom styling */
+#wrapper-main {
+    margin: 0 auto;
+    text-align: center;
+}
+/* Hero section */
+.hero-section {
+    padding: 40px 40px;
+    /* background: rgb(238,187,195);
+    background: linear-gradient(51deg, rgba(238,187,195,1) 0%, rgba(184,193,236,1) 55%, rgba(0,212,255,1) 100%); */
+}
+#hero-heading{
+    font-size: 54px;
+
+}
+#convert-el {
+    font-size: 96px;
+    text-shadow: 0 0 3px var(--main-bg-color);
+}
+
+/* Calc wrapper */
+.wrapper-calc{
+    display: flex;
+    flex-direction: column;
+
+}
+.flex-el{
+    padding: 10px;
+    margin: 15px 0;
+}
+.calc-heading {
+    font-size: 26px;
+    margin: 10px 0;
+}
+.calc-awnser {
+    font-size: 20px;
+}
