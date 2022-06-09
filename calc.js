@@ -8,17 +8,17 @@ function lengthConvert(valInt) {
     // Rounding down the numb variable to only contain two decimal points
     let roundedDown = Math.round((numb + Number.EPSILON) * 100) / 100;
     //changing the html of feet-calc to represent the rounded down awnser.
-    document.getElementById("feet-calc").innerHTML=roundedDown;
-}
+    document.getElementById("feet-calc").textContent=roundedDown;
+};
 //Check comments from lengthConvert for breakdown of this fucntion
 function volumeConvert(valInt) {
     numb = valInt*0.264172;
     let roundedDown = Math.round((numb + Number.EPSILON) * 100) / 100;
-    document.getElementById("gallon-calc").innerHTML=roundedDown;
-}
+    document.getElementById("gallon-calc").textContent=roundedDown;
+};
 //Check comments from lengthConvert for breakdown of this fucntion
 function massConvert(valInt) {
     numb = valInt*2.2046;
     let roundedDown = Math.round((numb + Number.EPSILON) * 100) / 100;
-    document.getElementById("pound-calc").innerHTML=roundedDown;
-}
+    document.getElementById("pound-calc").textContent=roundedDown;
+};
