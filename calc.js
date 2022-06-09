@@ -1,17 +1,21 @@
+// Meters to Feet -> 3.2808
+// Liters to Gallon -> 0.264172
+// Kilograms to Pounds -> 2.2046
 
-// Number used for converting
-let targetNumber = document.getElementById("convert-el");
-console.log(targetNumber);
+function lengthConvert(valInt) {
+    numb = valInt*3.2808;
+    let roundedDown = Math.round((numb + Number.EPSILON) * 100) / 100;
+    document.getElementById("feet-calc").innerHTML=roundedDown;
+}
 
-// Get class to display the same number as you are converting with
-let displayTargetNumb = document.getElementsByTagName("numb-targ");
-console.log(displayTargetNumb);
+function volumeConvert(valInt) {
+    numb = valInt*0.264172;
+    let roundedDown = Math.round((numb + Number.EPSILON) * 100) / 100;
+    document.getElementById("gallon-calc").innerHTML=roundedDown;
+}
 
-targetNumber.textContent = 20;
-displayTargetNumb.textContent = 20;
-
-/* let converterNumber = 20; 
-console.log(targetNumber) */
-// displayTargetNumb.textContent = targetNumber;
-// targetNumber.textContent = converterNumber;
-// console.log(targetNumber);
+function massConvert(valInt) {
+    numb = valInt*2.2046;
+    let roundedDown = Math.round((numb + Number.EPSILON) * 100) / 100;
+    document.getElementById("pound-calc").innerHTML=roundedDown;
+}

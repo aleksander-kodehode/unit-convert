@@ -18,7 +18,7 @@ button text             : #232946
     --main-bg-color: #232946;
     --main-heading-color:  #fffffe;
     --main-paragraph-color: #b8c1ec;
-    --main-button-color: #eebbc3:
+    --main-button-color: #eebbc3;
     --main-button-text-color: #232946;
 }
 
@@ -52,8 +52,31 @@ h1, h2, h3, h4, h5 {
 /* Calc wrapper */
 .wrapper-calc{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    line-height: 30px;
+    justify-content: center;
+    text-align: center;
+}
+.wrapper-awnser {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.wrapper-awnser h3 {
+    font-size: 26px;
+}
+.awnser-para {
+    margin-left: 10px;
+    font-size: 24px;
+}
 
+input {
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    background: var(--main-button-color);
+    color: var(--main-button-text-color);
+    font-size: 24px;
 }
 .flex-el{
     padding: 10px;
